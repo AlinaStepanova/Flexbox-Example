@@ -14,7 +14,7 @@
     app:layout_constraintTop_toTopOf="parent">
 
     <TextView
-        android:id="@+id/starters"
+        android:id="@+id/dishName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -40,7 +40,7 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/preview"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/starters"
+        app:layout_constraintTop_toBottomOf="@+id/dishName"
         tools:text="@tools:sample/lorem/random" />
 
     <com.google.android.material.imageview.ShapeableImageView

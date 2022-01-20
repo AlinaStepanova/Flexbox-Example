@@ -13,20 +13,14 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
 
             <TextView
                 android:id="@+id/starters"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:fontFamily="sans-serif-black"
-                android:maxLines="2"
+                style="@style/titleStyle"
                 android:text="@string/starters"
-                android:textColor="@color/black"
-                android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -46,16 +40,8 @@
 
             <TextView
                 android:id="@+id/mainCourses"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:fontFamily="sans-serif-black"
-                android:maxLines="2"
+                style="@style/titleStyle"
                 android:text="@string/main_courses"
-                android:textColor="@color/black"
-                android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/rvStarters" />
@@ -75,16 +61,8 @@
 
             <TextView
                 android:id="@+id/desserts"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:fontFamily="sans-serif-black"
-                android:maxLines="2"
+                style="@style/titleStyle"
                 android:text="@string/desserts"
-                android:textColor="@color/black"
-                android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/rvMainCourses" />
@@ -102,9 +80,7 @@
                 tools:listitem="@layout/list_item"
                 tools:visibility="visible" />
 
-
         </androidx.constraintlayout.widget.ConstraintLayout>
-
 
     </androidx.core.widget.NestedScrollView>
 
