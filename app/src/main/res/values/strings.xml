@@ -2,6 +2,7 @@
     <string name="app_name">FlexboxExample</string>
     <string name="starters">Starters</string>
     <string name="main_courses">Main Courses</string>
+    <string name="desserts">Desserts</string>
 
     <plurals name="see_more">
         <item quantity="one">See %s more ingredient</item>

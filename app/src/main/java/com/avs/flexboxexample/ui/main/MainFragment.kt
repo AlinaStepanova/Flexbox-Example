@@ -21,6 +21,7 @@ class MainFragment : Fragment() {
     private lateinit var viewModel: MainViewModel
     private lateinit var startersAdapter: MenuAdapter
     private lateinit var mainCoursesAdapter: MenuAdapter
+    private lateinit var dessertsAdapter: MenuAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,19 +31,26 @@ class MainFragment : Fragment() {
         val root = inflater.inflate(R.layout.main_fragment, container, false)
 
         val rvStarters = root.findViewById<RecyclerView>(R.id.rvStarters)
-        val rvMainCourses = root.findViewById<RecyclerView>(R.id.rvMainCourses)
-
         startersAdapter = MenuAdapter(viewModel.starters, context)
         rvStarters.apply {
             adapter = startersAdapter
             layoutManager = FlexboxLayoutManager(context, FlexDirection.ROW, FlexWrap.NOWRAP)
         }
 
+        val rvMainCourses = root.findViewById<RecyclerView>(R.id.rvMainCourses)
         mainCoursesAdapter = MenuAdapter(viewModel.mainCourses, context)
         rvMainCourses.apply {
             adapter = mainCoursesAdapter
             layoutManager = FlexboxLayoutManager(context, FlexDirection.ROW, FlexWrap.NOWRAP)
         }
+
+        val rvDesserts = root.findViewById<RecyclerView>(R.id.rvDesserts)
+        dessertsAdapter = MenuAdapter(viewModel.desserts, context)
+        rvDesserts.apply {
+            adapter = dessertsAdapter
+            layoutManager = FlexboxLayoutManager(context, FlexDirection.ROW, FlexWrap.NOWRAP)
+        }
+
         return root
     }
 }

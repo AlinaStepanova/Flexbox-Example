@@ -20,4 +20,10 @@ class MainViewModel : ViewModel() {
         Dish("Moussaka soup", "https://img.taste.com.au/_b4hgUzB/w720-h480-cfill-q80/taste/2020/05/moussaka-soup-161231-2.jpg", "A hearty meal this Moussaka soup is loaded with 3.5 vegies per serve.", 16, mutableListOf("2 lamb shanks", "400g can diced tomatoes", "2 cups Massel Chicken Style Liquid Stock"))
     )
 
+    val desserts: MutableList<Dish> = mutableListOf(
+        Dish("2-minute tiramisu", "https://img.taste.com.au/Ehszv7fu/w720-h480-cfill-q80/taste/2016/11/tiramisu-22890-1.jpeg", "This recipe's name speaks for itself.",5, mutableListOf("150ml thickened cream", "125g (1/2 cup) mascarpone", "2 tbs coffee liqueur", "60ml (1/4 cup) sweetened condensed milk")),
+        Dish("Panna cotta with roasted strawberries", "https://img.taste.com.au/Y01SN7U5/w720-h480-cfill-q80/taste/2019/08/panna-cotta-with-roasted-strawberries-taste-153207-1.jpg", "We can't get over how pretty these panna cotta with roasted strawberries are - and the fact that they're delicious is another bonus!", 8, mutableListOf("250g strawberries, chopped", "6 gelatine leaves", "300ml pouring (pure) cream")),
+        Dish("Pine lime splice cheesecake", "https://img.taste.com.au/PbH3__bj/w720-h480-cfill-q80/taste/2018/12/pine-lime-splice-cheesecake-145376-2.jpg", "We've turned the summer favourite Splice pine lime ice-cream into a jelly cheesecake, perfect for entertaining.", 11, mutableListOf("200g butternut snap cookies", "100g butter, melted", "500g cream cheese, softened", "9g packet lite pineapple jelly")),
+    )
+
 }
