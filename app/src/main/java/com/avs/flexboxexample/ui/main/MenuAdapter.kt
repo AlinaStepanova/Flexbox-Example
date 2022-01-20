@@ -23,15 +23,16 @@ abstract class FlexBoxViewHolder(itemView: View) : RecyclerView.ViewHolder(itemV
     }
 }
 
-class MenuAdapter(private val dataSet: List<Dish>, context: Context?): RecyclerView.Adapter<MenuAdapter.ViewHolder>() {
+class MenuAdapter(private val dataSet: List<Dish>, val context: Context?): RecyclerView.Adapter<MenuAdapter.ViewHolder>() {
 
-    val inflater = context?.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+    private val inflater = context?.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
     class ViewHolder(view: View) : FlexBoxViewHolder(view) {
         val title: TextView = view.findViewById(R.id.title)
         val description: TextView = view.findViewById(R.id.description)
         val preview: ShapeableImageView = view.findViewById(R.id.preview)
-        val ingredients: LinearLayout = view.findViewById(R.id.llIngredients)
+        val ingredients: LinearLayout = view.findViewById(R.id.ingredientsLayout)
+        val seeMore: TextView = view.findViewById(R.id.seeMore)
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
@@ -55,6 +56,12 @@ class MenuAdapter(private val dataSet: List<Dish>, context: Context?): RecyclerV
                 val offerView = inflater.inflate(R.layout.list_item_ingridient, null) as TextView
                 offerView.text = ingredient
                 ingredients.addView(offerView)
+            }
+
+            val ingredientsLeft = dish.totalIngredientsCount - dish.ingredients.size
+            if (ingredientsLeft > 0) {
+                seeMore.text = context?.getString(R.string.see_more, ingredientsLeft.toString())
+                seeMore.visibility = View.VISIBLE
             }
         }
     }

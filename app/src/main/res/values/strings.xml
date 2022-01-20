@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FlexboxExample</string>
+    <string name="see_more">See %s more ingredients</string>
 </resources>

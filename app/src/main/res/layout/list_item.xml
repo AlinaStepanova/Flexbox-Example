@@ -55,7 +55,7 @@
         tools:src="@tools:sample/avatars" />
 
     <LinearLayout
-        android:id="@+id/llIngredients"
+        android:id="@+id/ingredientsLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -65,6 +65,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <TextView
+        android:id="@+id/seeMore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/purple_700"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/ingredientsLayout"
+        app:layout_constraintTop_toBottomOf="@+id/ingredientsLayout"
+        tools:text="See more"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
