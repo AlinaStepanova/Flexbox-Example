@@ -31,7 +31,7 @@ class MainFragment : Fragment() {
         val layoutManager = FlexboxLayoutManager(context, FlexDirection.ROW, FlexWrap.NOWRAP)
         val rvStarters = root.findViewById<RecyclerView>(R.id.rvStarters)
 
-        menuAdapter = MenuAdapter(viewModel.list)
+        menuAdapter = MenuAdapter(viewModel.list, context)
         rvStarters.apply {
             adapter = menuAdapter
             setLayoutManager(layoutManager)

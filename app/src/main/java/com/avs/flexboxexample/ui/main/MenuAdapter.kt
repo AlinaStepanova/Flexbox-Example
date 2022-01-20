@@ -3,6 +3,7 @@ package com.avs.flexboxexample.ui.main
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.avs.flexboxexample.R
@@ -10,6 +11,7 @@ import com.google.android.flexbox.AlignItems
 import com.google.android.flexbox.FlexboxLayoutManager
 import com.google.android.material.imageview.ShapeableImageView
 import com.squareup.picasso.Picasso
+import android.content.Context
 
 abstract class FlexBoxViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     init {
@@ -21,12 +23,15 @@ abstract class FlexBoxViewHolder(itemView: View) : RecyclerView.ViewHolder(itemV
     }
 }
 
-class MenuAdapter(private val dataSet: List<Dish>): RecyclerView.Adapter<MenuAdapter.ViewHolder>() {
+class MenuAdapter(private val dataSet: List<Dish>, context: Context?): RecyclerView.Adapter<MenuAdapter.ViewHolder>() {
+
+    val inflater = context?.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
     class ViewHolder(view: View) : FlexBoxViewHolder(view) {
         val title: TextView = view.findViewById(R.id.title)
         val description: TextView = view.findViewById(R.id.description)
         val preview: ShapeableImageView = view.findViewById(R.id.preview)
+        val ingredients: LinearLayout = view.findViewById(R.id.llIngredients)
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
@@ -37,15 +42,22 @@ class MenuAdapter(private val dataSet: List<Dish>): RecyclerView.Adapter<MenuAda
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
-        viewHolder.title.text = dataSet[position].title
-        viewHolder.description.text = dataSet[position].description
+        val dish = dataSet[position]
+        viewHolder.apply {
+            title.text = dish.title
+            description.text = dish.description
 
-        Picasso.get()
-            .load(dataSet[position].preview)
-            .into(viewHolder.preview)
+            Picasso.get()
+                .load(dish.previewUrl)
+                .into(preview)
+
+            dish.ingredients.forEach { ingredient ->
+                val offerView = inflater.inflate(R.layout.list_item_ingridient, null) as TextView
+                offerView.text = ingredient
+                ingredients.addView(offerView)
+            }
+        }
     }
 
     override fun getItemCount() = dataSet.size
-
-
 }
