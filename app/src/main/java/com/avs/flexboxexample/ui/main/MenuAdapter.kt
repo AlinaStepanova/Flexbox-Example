@@ -28,7 +28,7 @@ class MenuAdapter(private val dataSet: List<Dish>, val context: Context?): Recyc
     private val inflater = context?.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
     class ViewHolder(view: View) : FlexBoxViewHolder(view) {
-        val title: TextView = view.findViewById(R.id.title)
+        val title: TextView = view.findViewById(R.id.starters)
         val description: TextView = view.findViewById(R.id.description)
         val preview: ShapeableImageView = view.findViewById(R.id.preview)
         val ingredients: LinearLayout = view.findViewById(R.id.ingredientsLayout)

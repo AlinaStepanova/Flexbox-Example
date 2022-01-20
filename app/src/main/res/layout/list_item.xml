@@ -14,7 +14,7 @@
     app:layout_constraintTop_toTopOf="parent">
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/starters"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -35,12 +35,12 @@
         android:layout_marginEnd="8dp"
         android:ellipsize="end"
         android:fontFamily="sans-serif-condensed"
-        android:maxLines="3"
+        android:maxLines="2"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/preview"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/starters"
         tools:text="@tools:sample/lorem/random" />
 
     <com.google.android.material.imageview.ShapeableImageView

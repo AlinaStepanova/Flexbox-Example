@@ -16,16 +16,62 @@
 <!--        app:layout_constraintStart_toStartOf="parent"-->
 <!--        app:layout_constraintTop_toTopOf="parent">-->
 
+        <TextView
+            android:id="@+id/starters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="sans-serif-black"
+            android:maxLines="2"
+            android:text="@string/starters"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toStartOf="@+id/rvStarters"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvStarters"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:orientation="horizontal"
-            tools:listitem="@layout/list_item"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:itemCount="4"
+            app:layout_constraintTop_toBottomOf="@+id/starters"
+            tools:itemCount="2"
+            tools:listitem="@layout/list_item"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/mainCourses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="sans-serif-black"
+            android:maxLines="2"
+            android:text="@string/main_courses"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toStartOf="@+id/rvStarters"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rvStarters" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMainCourses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainCourses"
+            tools:itemCount="2"
+            tools:listitem="@layout/list_item"
             tools:visibility="visible" />
 
 <!--    </HorizontalScrollView>-->
