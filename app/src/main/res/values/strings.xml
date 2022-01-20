@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">FlexboxExample</string>
-    <string name="see_more">See %s more ingredients</string>
+
+    <plurals name="see_more">
+        <item quantity="one">See %s more ingredient</item>
+        <item quantity="other">See %s more ingredients</item>
+    </plurals>
 </resources>

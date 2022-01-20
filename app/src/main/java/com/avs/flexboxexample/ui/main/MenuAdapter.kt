@@ -60,7 +60,7 @@ class MenuAdapter(private val dataSet: List<Dish>, val context: Context?): Recyc
 
             val ingredientsLeft = dish.totalIngredientsCount - dish.ingredients.size
             if (ingredientsLeft > 0) {
-                seeMore.text = context?.getString(R.string.see_more, ingredientsLeft.toString())
+                seeMore.text = context?.resources?.getQuantityString(R.plurals.see_more, ingredientsLeft, ingredientsLeft.toString())
                 seeMore.visibility = View.VISIBLE
             }
         }
