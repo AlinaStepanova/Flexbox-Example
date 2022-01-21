@@ -30,27 +30,37 @@ class MainFragment : Fragment() {
         viewModel = ViewModelProvider(this)[MainViewModel::class.java]
         val root = inflater.inflate(R.layout.main_fragment, container, false)
 
+        setUpStartersUI(root)
+        setUpMainCoursesUI(root)
+        setUpDessertsUI(root)
+
+        return root
+    }
+
+    private fun setUpStartersUI(root: View) {
         val rvStarters = root.findViewById<RecyclerView>(R.id.rvStarters)
         startersAdapter = MenuAdapter(viewModel.starters, context)
         rvStarters.apply {
             adapter = startersAdapter
             layoutManager = FlexboxLayoutManager(context, FlexDirection.ROW, FlexWrap.NOWRAP)
         }
+    }
 
+    private fun setUpMainCoursesUI(root: View) {
         val rvMainCourses = root.findViewById<RecyclerView>(R.id.rvMainCourses)
         mainCoursesAdapter = MenuAdapter(viewModel.mainCourses, context)
         rvMainCourses.apply {
             adapter = mainCoursesAdapter
             layoutManager = FlexboxLayoutManager(context, FlexDirection.ROW, FlexWrap.NOWRAP)
         }
+    }
 
+    private fun setUpDessertsUI(root: View) {
         val rvDesserts = root.findViewById<RecyclerView>(R.id.rvDesserts)
         dessertsAdapter = MenuAdapter(viewModel.desserts, context)
         rvDesserts.apply {
             adapter = dessertsAdapter
             layoutManager = FlexboxLayoutManager(context, FlexDirection.ROW, FlexWrap.NOWRAP)
         }
-
-        return root
     }
 }
