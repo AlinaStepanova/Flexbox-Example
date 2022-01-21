@@ -1,0 +1,16 @@
+com/avs/flexboxexample/DataBindingTriggerClass.java
+ com.avs.flexboxexample.DataBindingTriggerClass
+com/avs/flexboxexample/DataBinderMapperImpl.java
+ com.avs.flexboxexample.DataBinderMapperImpl
+ com.avs.flexboxexample.DataBinderMapperImpl$InnerBrLookup
+ com.avs.flexboxexample.DataBinderMapperImpl$InnerLayoutIdLookup
+androidx/databinding/DataBinderMapperImpl.java
+ androidx.databinding.DataBinderMapperImpl
+com/avs/flexboxexample/BR.java
+ com.avs.flexboxexample.BR
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
+com/avs/flexboxexample/BuildConfig.java
+ com.avs.flexboxexample.BuildConfig

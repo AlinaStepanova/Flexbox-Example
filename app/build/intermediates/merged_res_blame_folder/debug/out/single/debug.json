@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/build/intermediates/merged_res/debug/layout_main_activity.xml.flat",
+        "source": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/src/main/res/layout/main_activity.xml"
+    },
+    {
+        "merged": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/src/main/res/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/build/intermediates/merged_res/debug/drawable_ic_circle.xml.flat",
+        "source": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/src/main/res/drawable/ic_circle.xml"
+    },
+    {
+        "merged": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/build/intermediates/merged_res/debug/layout_list_item_ingridient.xml.flat",
+        "source": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/src/main/res/layout/list_item_ingridient.xml"
+    },
+    {
+        "merged": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/build/intermediates/merged_res/debug/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/src/main/res/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/build/intermediates/merged_res/debug/layout_main_fragment.xml.flat",
+        "source": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/src/main/res/layout/main_fragment.xml"
+    },
+    {
+        "merged": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/src/main/res/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/build/intermediates/merged_res/debug/drawable_rounded_background.xml.flat",
+        "source": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/src/main/res/drawable/rounded_background.xml"
+    },
+    {
+        "merged": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/build/intermediates/merged_res/debug/layout_list_item.xml.flat",
+        "source": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/src/main/res/layout/list_item.xml"
+    },
+    {
+        "merged": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/alina_stepanova/StudioProjects/FlexboxExample/app/src/main/res/mipmap-mdpi/ic_launcher.webp"
+    }
+]
