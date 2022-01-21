@@ -1,6 +1,5 @@
 package com.avs.flexboxexample.ui.main
 
-import androidx.lifecycle.OnLifecycleEvent
 import androidx.lifecycle.ViewModel
 
 data class Dish(

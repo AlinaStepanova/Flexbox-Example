@@ -15,10 +15,10 @@ import android.content.Context
 
 abstract class FlexBoxViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     init {
-        val lp = itemView.layoutParams
-        if (lp is FlexboxLayoutManager.LayoutParams) {
-            lp.flexShrink = 0.0f
-            lp.alignSelf = AlignItems.FLEX_START
+        val params = itemView.layoutParams
+        if (params is FlexboxLayoutManager.LayoutParams) {
+            params.flexShrink = 0.0f
+            params.alignSelf = AlignItems.FLEX_START
         }
     }
 }
