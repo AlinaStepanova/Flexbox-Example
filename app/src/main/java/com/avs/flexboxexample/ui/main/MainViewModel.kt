@@ -106,7 +106,8 @@ class MainViewModel : ViewModel() {
             mutableListOf(
                 "2 lamb shanks",
                 "400g can diced tomatoes",
-                "2 cups Massel Chicken Style Liquid Stock"
+                "2 cups Massel Chicken Style Liquid Stock",
+                "1 brown onion, 3 garlic cloves"
             )
         )
     )
